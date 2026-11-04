@@ -1,11 +1,14 @@
+# IMPORT DAS BIBLIOTECAS E SUAS FUNÇÕES
 import streamlit as st
 from consumidor_api import obter_dados_meteorologicos
 
+#CONFIGURANDO O TITULO DA PAGINA E A ESCOLHA DA CIDADE
 st.set_page_config(page_title="Monitoramento Meteorológico", page_icon="🌦️")
 
 st.title("🌦️ Monitoramento Meteorológico")
 st.caption("Jaraguá do Sul - SC")
 
+# BOTÃO DE ATUALIZAR AS INFORMAÇÕES
 if st.button("Atualizar dados"):
     st.rerun()
 
